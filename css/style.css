@@ -1,0 +1,255 @@
+body
+{
+  display: flex;
+  width: 1050px;
+  padding-top: 150px;
+  background-image: url(../images/fond.gif);
+  margin: 0 auto;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.default, .unavailableCase, .caseJoueur, img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.default
+{
+	background-color: white;
+	border: 1.5px solid grey;
+}
+
+.unavailableCase
+{
+	background-color: grey;
+	border: 1.5px solid black;
+}
+
+.caseJoueur
+{
+	border: 1.5px solid black;
+}
+
+.HAMMER
+{
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid green;
+  background-image: url("../images/armes/marteau.jpg");
+    background-color: white;
+  background-repeat: no-repeat;
+}
+.KNIFFE
+{
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid green;
+  background-image: url("../images/armes/couteau.jpg");
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+
+
+.SWORDLIGHT
+{
+	background-image: url("../images/armes/sabre.png");
+}
+
+.FENNEL
+{
+	background-image: url("../images/armes/fenouil.png");
+}
+
+.INFINITYGAUNTLET
+{
+	background-image: url("../images/armes/gant.png"); 
+}
+
+.EXCALIBUR
+{
+	background-image: url("../images/armes/epee.png");
+}
+
+.SWORDLIGHT, .FENNEL, .INFINITYGAUNTLET, .EXCALIBUR{
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid black;
+  background-color: white;
+  background-repeat: no-repeat;
+}
+
+.moove
+{
+	background-color: #2cd5ff;
+	width: 50px;
+	height: 50px;
+	border: 1.5px solid #00a3cc !important;
+	transition-property: background-color;
+	transition-duration: .5s;
+}
+
+#damier
+{
+	width: 520px;
+	height: 530px;
+	padding: 5px;
+	margin: 0;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 3px;
+}
+
+.info
+{
+  background-image: url(../images/manette.jpg);
+  width: 240px;
+  height: 530px;
+  margin : 3px auto;
+  border : 5px solid  grey;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.imgPerso
+{
+  height: 100px;
+  width: 100px;
+}
+
+.nomVie
+{
+  margin-top:  15px;
+  margin-bottom: 60px;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.progress 
+{
+  position: relative;
+  display: inline-block;
+}
+
+.progressBar 
+{
+  margin-top: 20px;  
+  margin-bottom: 20px;
+  width: 160px;
+  height: 22px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+.progressValue 
+{
+  margin-top: 20px;  
+  position: absolute;
+  top: 5px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.boutons
+{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    
+    
+    
+}
+
+button
+{
+  width: 55px;
+  height: 55px;
+  margin: 10 auto;
+
+  text-align: center;
+  
+  border-color: black;
+  font:bold 17px Arial;
+  border-radius:50%;
+  color: white;
+  background-color: #cc0000;
+  
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 0px 0px #cc0000;
+  -moz-box-shadow: 0px 9px 0px #cc0000;
+  box-shadow: 0px 9px 0px #cc0000;
+  
+  display: inline-block;
+}
+
+
+button:active
+{
+  -webkit-box-shadow: 0px 2px 0px #84261a;
+  -moz-box-shadow: 0px 2px 0px #84261a;
+  box-shadow: 0px 2px 0px #84261a;
+  position:relative;
+  top:7px;
+}
+
+
+#modalFight 
+{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    background-image: url(../images/fight.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+
+}
+
+#replay 
+{
+    position: absolute;
+    color: white;
+    width: 520px;
+    height: 130px;
+    z-index: 2;
+    background-color: black;
+    border-radius: .5rem;
+    
+    top: 50%;  
+    left: 35%;
+    padding: 2vh;
+    
+    border: 3px solid darkcyan;
+}
+
+.divBoutonReplay
+{
+    display: flex;
+    margin: 20px;
+}
+
+
+.boutonReplay
+{
+
+    
+}
+
